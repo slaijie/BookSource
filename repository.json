@@ -1,0 +1,94 @@
+{
+  "name": "HM",
+  "summary": "Provided links and based on github.com",
+  "list": [
+    {
+      "name": "69书吧",
+      "url": "https://www.69shu.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 102
+    },
+    {
+      "name": "云中书库",
+      "url": "http://www.yunxs.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "八一中文网",
+      "url": "https://www.zwdu.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "大家读书院",
+      "url": "https://www.dajiadu8.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 101
+    },
+    {
+      "name": "奇快中文网",
+      "url": "https://www.7kzw.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 103
+    },
+    {
+      "name": "妙笔阁",
+      "url": "https://www.imiaobige.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 101
+    },
+    {
+      "name": "幻月书院",
+      "url": "http://m.huanyue123.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "月色寒",
+      "url": "https://www.yuesehan.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 104
+    },
+    {
+      "name": "玫瑰小说网",
+      "url": "https://www.meiguixs.net",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "笔趣阁",
+      "url": "https://www.kenshuge.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "采墨阁",
+      "url": "https://www.caimoge.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 101
+    }  
+  ]
+}
