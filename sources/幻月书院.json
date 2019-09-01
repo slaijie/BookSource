@@ -1,0 +1,35 @@
+{
+  "name": "幻月书院",
+  "version": 100,
+  "category": 1,
+  "url": "http://m.huanyue123.com",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["a > p.title","meta[property=og:novel:book_name]@attr->content"],
+    "author": ["a > p:nth-child(2)@js->${this}.split(' | ')[1].replace('作者：','')","meta[property=og:novel:author]@attr->content"],
+    "cover": ["meta[property=og:image]@attr->content"],
+    "summary": ["meta[property=og:description]@attr->content"],
+    "category": ["a > p:nth-child(2)@js->${this}.split(' | ')[0]","meta[property=og:novel:category]@attr->content"],
+    "status": ["a > p:nth-child(3)@js->${this}.split(' | ')[0]","meta[property=og:novel:status]@attr->content"],
+    "update": ["meta[property=og:novel:update_time]@attr->content"],
+    "lastChapter": ["a > p:nth-child(3)@js->${this}.split(' | ')[1].replace('更新：','')","meta[property=og:novel:latest_chapter_name]@attr->content"],
+    "link": ["a@attr->href"],
+    "catalog": ["p.btn > a:nth-child(1)@attr->href"]
+  },
+  "catalog": {
+    "list": "#chapterlist > p:gt(0)",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#chaptercontent",
+    "filter": ["@div","@p"]
+  },
+  "search": {
+    "link": "http://m.huanyue123.com/s.php@post->keyword=${key}",
+    "list": "body > div > div:gt(0)"
+  }
+}

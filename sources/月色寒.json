@@ -1,0 +1,38 @@
+{
+  "name": "月色寒",
+  "version": 104,
+  "category": 1,
+  "url": "https://www.yuesehan.com",
+  "charset": "gbk",
+  "metadata": {
+    "name": ["div.bandItemLeft > h2 > a","meta[property=og:novel:book_name]@attr->content"],
+    "author": ["p.bandPhr > span:lt(1)","meta[property=og:novel:author]@attr->content"],
+    "cover": ["div.bandItemLeft > a > img@attr->src","meta[property=og:image]@attr->content"],
+    "summary": ["p.bandDesc","meta[property=og:novel:description]@attr->content"],
+    "category": ["div.bookPhr > dl > dd:gt(0):lt(2)","meta[property=og:novel:category]@attr->content"],
+    "status": ["p.bandPhr > span:gt(0)","meta[property=og:novel:status]@attr->content"],
+    "update": ["p.bandRenew > span","meta[property=og:novel:update_time]@attr->content"],
+    "lastChapter": ["p.bandRenew > a","meta[property=og:novel:latest_chapter_name]@attr->content"],
+    "link": ["div.bandItemLeft > h2 > a@attr->href","a.bookDetail@attr->href","div.bandItemLeft > a@attr->href"],
+    "catalog": ["a.readBn@attr->href"," div.page > a:nth-child(2)@attr->href"]
+  },
+  "catalog": {
+    "list": " div.chapterList > div.chapterCon > ul > li",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "div.articleCon > p",
+    "page": {
+     "next": "div.page > a:matches(下一页)@attr->href"
+    },
+    "filter": []
+  },
+  "search": {
+    "link": "https://www.yuesehan.com/modules/article/search.php?searchkey=${key}",
+    "list": "div.bandListRight > ul > li"
+  } 
+}

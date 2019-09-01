@@ -1,0 +1,34 @@
+{
+  "name": "玫瑰小说网",
+  "version": 100,
+  "category": 1,
+  "url": "https://www.meiguixs.net",
+  "charset": "gbk",
+  "metadata": {
+    "name": ["td:nth-child(1) > a","div.bookright > h1"],
+    "author": ["td:nth-child(3)","#author > a"],
+    "cover": ["#bookimg > img@attr->src"],
+    "summary": ["#bookintro > p"],
+    "category": ["#count > span:nth-child(1)"],
+    "status": ["td:nth-child(6)","span:nth-child(6)"], 
+    "update": ["td:nth-child(5)","span.new_t@js->${this}.replace('最后更新：','')"],
+    "lastChapter": ["td:nth-child(2) > a"],
+    "link": ["td:nth-child(1) > a@attr->href"],
+    "catalog": ["#reader > a@attr->href"]
+  },
+  "catalog": {
+    "list": "#readerlist > ul > li",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#content"
+  },
+  "search": {
+    "link": "https://www.meiguixs.net/modules/article/search.php@post->searchkey=${key}",
+    "list": "#nr"
+  }
+}
