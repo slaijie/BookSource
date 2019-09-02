@@ -3,6 +3,7 @@
 The repository is based on Github to provide an open book source repository for the Deepink, and welcomes the introduction of new book sources.
 
 厚墨仓库地址：https://raw.githubusercontent.com/imgool/BookSource/master/repository.json
+阅读导入网址：https://raw.githubusercontent.com/imgool/BookSource/master/myBookSource.json
 ##### 目前已收录
 
 | 书源 | API | 类型 | 排行榜 | 账号 | 版本 |
