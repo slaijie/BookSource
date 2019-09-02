@@ -1,0 +1,35 @@
+{
+  "name": "大家读书院",
+  "version": 102,
+  "category": 1,
+  "url": "https://www.dajiadu8.com",
+  "charset": "gbk",
+  "metadata": {
+    "name": ["td:nth-child(1) > a"],
+    "author": ["tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td:nth-child(2)@js->${this}.replace(/作 者：/, '')"],
+    "cover": ["td:nth-child(2) > img@attr->src"],
+    "summary": ["meta[property=og:description]@attr->content"],
+    "category": ["td > table > tbody > tr:nth-child(2) > td:nth-child(1)@js->${this}.replace(/类 别：/, '')"],
+    "status": ["td:nth-child(6)"],
+    "update": ["td:nth-child(5)"],
+    "lastChapter": ["td:nth-child(2) > a"],
+    "link": ["td:nth-child(1) > a@attr->href"],
+    "catalog": ["ul.ulrow > li:lt(1) > a@attr->href"]
+  },
+  "catalog": {
+    "list": "#booktext > ul > li",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#content1",
+    "filter": ["@span"]
+  },
+  "search": {
+    "link": "https://www.dajiadu8.com/modules/article/searchab.php@post->searchtype=articlename&searchkey=${key}",
+    "list": "table > tbody > tr:gt(0)"
+  } 
+}

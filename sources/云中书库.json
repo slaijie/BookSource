@@ -1,0 +1,35 @@
+{
+  "name": "云中书库",
+  "version": 100,
+  "category": 1,
+  "url": "http://www.yunxs.com",
+  "charset": "UTF-8",
+  "metadata": {
+    "name": ["h2 > a","meta[property=og:novel:book_name]@attr->content"],
+    "author": ["p.state > a","meta[property=og:novel:author]@attr->content"],
+    "cover": ["div.pic > a:nth-child(1) > img@attr->src","meta[property=og:image]@attr->content"],
+    "summary": ["div.words > p:nth-child(3)","meta[property=og:description]@attr->content"],
+    "category": ["h2 > span","meta[property=og:novel:category]@attr->content"],
+    "status": ["meta[property=og:novel:status]@attr->content"],
+    "update": ["meta[property=og:novel:update_time]@attr->content"],
+    "lastChapter": ["meta[property=og:novel:latest_chapter_name]@attr->content"],
+    "link": ["h2 > a@attr->href","div.pic > a:lt(1)@attr->href"],
+    "catalog": ["p.arcurl > span > a:lt(1)@attr->href","span.bookhome > a@attr->href"]
+  },
+  "catalog": {
+    "list": " div.list_box > ul > li",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "div.box_box",
+    "filter": ["@div"]
+  },
+  "search": {
+    "link": "http://www.yunxs.com/plus/search.php?keyword=${key}",
+    "list": "#main > ul > li"
+  } 
+}

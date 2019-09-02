@@ -1,0 +1,34 @@
+{
+  "name": "69书吧",
+  "version": 102,
+  "category": 1,
+  "url": "https://www.69shu.com",
+  "charset": "gbk",
+  "metadata": {
+    "name": ["div.sk_xinxi > h3 > a","div.status > h1 > a","div > a:nth-child(3)"],
+    "author": ["p:nth-child(3) > a","p.author > em > a"],
+    "cover": ["div.sk_img > a > img@attr->src","div.imgbox > a > img@attr->src"],
+    "summary": ["p.p_nr","div.con > div > p"],
+    "category": ["span > a","em > p:nth-child(1) > a","div > a:nth-child(2)"],
+    "status": ["span.serial"],
+    "update": ["span.sp_02","p:nth-child(3) > span"],
+    "lastChapter": ["span.sp_01 > a","p:nth-child(4) > a > span"],
+    "link": ["div.sk_xinxi > h3 > a@attr->href","div.sk_img > a@attr->href","div.sk_caozuo > a:nth-child(1)"],
+    "catalog": ["a.button.read@attr->href"]
+  },
+  "catalog": {
+    "list": "div:nth-child(5) > ul > li",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a@js->${this}.replace(/我要报错！/, '')",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "div.yd_text2"
+  },
+  "search": {
+    "link": "https://www.69shu.com/modules/pc/search.php@post->searchkey=${key}",
+    "list": "div.sk_box"
+  }
+}

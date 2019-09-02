@@ -1,0 +1,35 @@
+{
+  "name": "奇快中文网",
+  "version": 103,
+  "category": 1,
+  "url": "https://www.7kzw.com",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["span.s2 > a","meta[property=og:novel:book_name]@attr->content"],
+    "author": ["span.s4 > a","meta[property=og:novel:author]@attr->content"],
+    "cover": ["meta[property=og:image]@attr->content"],
+    "summary": ["meta[property=og:description]@attr->content"],
+    "category": ["meta[property=og:novel:category]@attr->content"],
+    "status": ["meta[property=og:novel:status]@attr->content"],
+    "update": ["span.s6","meta[property=og:novel:update_time]@attr->content"],
+    "lastChapter": ["span.s3 > a","meta[property=og:novel:latest_chapter_name]@attr->content"],
+    "link": ["span.s2 > a@attr->href"],
+    "catalog": ["span.s2 > a@attr->href"]
+  },
+  "catalog": {
+    "list": "#list > dl > dd:gt(12)",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#content",
+    "filter": ["@p","@div"]
+  },
+  "search": {
+    "link": "https://www.7kzw.com/index.php?s=/web/index/search@post->name=${key}",
+    "list": "div.novelslist2 > ul > li:gt(0)"
+  } 
+}
