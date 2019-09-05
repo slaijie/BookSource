@@ -1,0 +1,41 @@
+{
+  "name": "书迷楼",
+  "version": 100,
+  "category": 1,
+  "url": "https://m.shumilou.org",
+  "charset": "gbk",
+  "metadata": {
+    "name": [".article > a:nth-child(1)","p:nth-child(1) > strong"],
+    "author": ["span.mr15@js->${this}.replace('作者:','')","p:nth-child(2) > a"],
+    "cover": ["a > img@attr->src","td:nth-child(1) > img@attr->src"],
+    "summary": ["a:nth-child(4) > span","div.intro"],
+    "category": ["p:nth-child(3) > a"],
+    "status": ["p:nth-child(4)@js->${this}.replace('状态：','')"],
+    "update": ["p:nth-child(5)@js->${this}.replace('更新：','')"],
+    "lastChapter": ["p:nth-child(6) > a"],
+    "link": [".article > a:nth-child(1)@attr->href"],
+    "catalog": ["td:nth-child(2) > a@attr->href"]
+  },
+  "catalog": {
+    "list": "ul > li:gt(0)",
+    "orderBy": 0,
+    "page":{
+      "next":"a:matches(下一页)@attr->href"
+    },
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#nr1",
+    "page":{
+      "next":"#pb_next:matches(下一页)@attr->href"
+    },
+    "filter": ["@center"]
+  },
+  "search": {
+    "link": "https://m.shumilou.org/modules/article/waps.php?searchtype=articlename&searchkey=${key}",
+    "list": ".list-item > tbody > tr"
+  }
+}
