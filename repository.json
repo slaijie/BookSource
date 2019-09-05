@@ -2,6 +2,14 @@
   "name": "WooYoung",
   "summary": "自用源，收集整理至网络，侵删。",
   "list": [
+{
+      "name": "书迷楼",
+      "url": "https://m.shumilou.org",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
     {
       "name": "69书吧",
       "url": "https://www.69shu.com",
